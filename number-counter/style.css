@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 13px;
+    background: #e0e0e0;
+    box-shadow:  50px 50px 100px #7b7b7b,
+             -50px -50px 100px #ffffff;;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card h1 {
+    color: rgba(0, 0, 0, 0.527);
+    text-align: center;
+}
+
+.numbers {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.numbers input {
+    height: 30px;
+    width: 150px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.384);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.726);
+}
+
+.numbers input:nth-child(n+4):hover {
+    cursor: pointer;
+}
+
+.numbers input:focus {
+    outline: none;
+}
+
+.result {
+    font-size: 4em;
+    font-weight: bold;
+}
