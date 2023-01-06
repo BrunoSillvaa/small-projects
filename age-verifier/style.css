@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 13px;
+    background: #e0e0e0;
+    box-shadow:  50px 50px 100px #7b7b7b,
+                -50px -50px 100px #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card h1 {
+    color: rgba(0, 0, 0, 0.527);
+    text-align: center;
+}
+
+.card h2 {
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.603);
+}
+
+.year {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.year input {
+    width: 75%;
+    height: 30px;
+    width: 150px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.384);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.726);
+}
+
+.year input:focus {
+    outline: none;
+}
+
+.sex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.sex input:hover {
+    cursor: pointer;
+}
+
+#ansewer {
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.inputs .verifierbutton {
+    height: 30px;
+    width: 150px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.384);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.726);
+}
+
+.inputs .verifierbutton:hover {
+    cursor: pointer;
+}
