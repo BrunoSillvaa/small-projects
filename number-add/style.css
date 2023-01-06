@@ -22,7 +22,8 @@ body {
     border-radius: 13px;
     background: #e0e0e0;
     box-shadow:  50px 50px 100px #7b7b7b,
-                -50px -50px 100px #ffffff;
+             -50px -50px 100px #ffffff;;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -34,20 +35,16 @@ body {
     text-align: center;
 }
 
-.card h2 {
-    font-weight: normal;
-    color: rgba(0, 0, 0, 0.603);
-}
-
-.year {
+.numbers {
+    width: 75%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
 
-.year input {
-    width: 75%;
+.numbers input {
     height: 30px;
     width: 150px;
     border-radius: 4px;
@@ -60,48 +57,15 @@ body {
     color: rgba(0, 0, 0, 0.726);
 }
 
-.year input:focus {
+.numbers input:nth-child(n+4):hover {
+    cursor: pointer;
+}
+
+.numbers input:focus {
     outline: none;
 }
 
-.sex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.sex input:hover {
-    cursor: pointer;
-}
-
-#ansewer {
-    height: 50px;
+.result {
+    font-size: 4em;
     font-weight: bold;
-    font-size: 1.2em;
-    text-align: center;
-    line-height: 50px;
-}
-
-.inputs {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.inputs .verifierbutton {
-    height: 30px;
-    width: 150px;
-    border-radius: 4px;
-    border: none;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.384);
-
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.3em;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.726);
-}
-
-.inputs .verifierbutton:hover {
-    cursor: pointer;
 }

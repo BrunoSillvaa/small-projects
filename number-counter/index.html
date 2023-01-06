@@ -10,13 +10,18 @@
 <body>
     <main>
         <div class="card">
-            <h1>Contador</h1>
+            <h1>Contar Números</h1>
             <div class="numbers">
-                <input type="number" name="number1" id="number1">
-                <p>+</p>
-                <input type="number" name="number2" id="number2">
-                <input id="add" type="button" value="Somar">
-                <input id="reset" type="button" value="Resetar">
+                <label for="start">Começo</label>
+                <input type="number" name="start" id="start">
+                <label for="step">Passo</label>
+                <input type="number" name="step" id="step">
+                <label for="end">Final</label>
+                <input type="number" name="end" id="end">
+                <div id="inputs">
+                    <input id="count" type="button" value="Contar">
+                    <input id="reset" type="button" value="Resetar">
+                </div>
             </div>
             <div id="result" class="result">0</div>
         </div>

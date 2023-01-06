@@ -57,12 +57,19 @@ body {
     color: rgba(0, 0, 0, 0.726);
 }
 
-.numbers input:nth-child(n+4):hover {
-    cursor: pointer;
-}
-
 .numbers input:focus {
     outline: none;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#inputs input:hover {
+    cursor: pointer;
 }
 
 .result {
