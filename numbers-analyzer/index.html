@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Numbers Analyzer</title>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <h1>Verificador de números</h1>
+            <div class="numbers">
+                <label for="number">Digite um numero entre 0 e 100</label>
+                <div class="inputs">
+                    <input type="number" name="number" id="number">
+                    <input type="button" value="+" id="addnumber">
+                    <input type="button" value="Verificar" id="verify">
+                    <input type="button" value="Resetar" id="reset">
+                </div>
+            </div> 
+            <select name="select" class="select" size="1">
+                <option value="">Clique para visualizar</option>
+            </select>
+            <div class="result"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
