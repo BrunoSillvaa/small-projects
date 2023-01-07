@@ -2,6 +2,7 @@
 var number = document.querySelector('input#number')
 var addnumber = document.querySelector('input#addnumber')
 var verify = document.querySelector('input#verify')
+
 var select = document.querySelector('select.select')
 var result = document.querySelector('div.result')
 
@@ -14,35 +15,46 @@ verify.addEventListener('click', verifyNumbers)
 
 // Funcoes
 function addNumber() {
-    //Adiciona o numero ao array
-    array.push(number.value)
-
-    //Cria e adiciona um Option ao Select
-    let option = document.createElement('option')
-    option.text = `${Number(number.value)}`
-    select.appendChild(option)
-
-    // Limpa o input do numero
-    number.value = null
+    // Verifica o tamanho do número
+    if (number.value < 0 || number.value > 100) {
+        window.alert('Número Invalido. Por favor tente novamente.')
+    } else {
+        //Adiciona o numero ao array
+        array.push(number.value)
+    
+        //Cria e adiciona um Option ao Select
+        let option = document.createElement('option')
+        option.text = `${Number(number.value)}`
+        select.appendChild(option)
+    
+        // Limpa o input do numero
+        number.value = null
+        number.focus()
+    }
 }
 
 function verifyNumbers() {
-    // Ordena o Array
-    array.sort()
+    // Verifica se o Array está vazio
+    if (array.length == 0) {
+        window.alert('Lista Vazia. Adicione um número.')
+    } else {
+        // Ordena o Array
+        array.sort()
 
-    // Cria um contador e soma o Array
-    var arraysum = 0
-    for (let cont in array) {
-        arraysum += Number(array[cont])
+        // Cria um contador e soma o Array
+        var arraysum = 0
+        for (let cont in array) {
+            arraysum += Number(array[cont])
+        }
+
+        result.innerHTML += `<p>Ao total foram cadastrados ${array.length} números</p>`
+
+        result.innerHTML += `<p>O maior número cadastrado foi o ${array[array.length-1]}</p>`
+
+        result.innerHTML += `<p>O menor número cadastrado foi o ${array[0]}</p>`
+
+        result.innerHTML += `A soma de todos os números é ${arraysum}`
+
+        result.innerHTML += `<p>A média de todos os valores é ${arraysum/array.length}</p>`
     }
-
-    result.innerHTML += `<p>Ao total foram cadastrados ${array.length} números</p>`
-
-    result.innerHTML += `<p>O maior número cadastrado foi o ${array[array.length-1]}</p>`
-
-    result.innerHTML += `<p>O menor número cadastrado foi o ${array[0]}</p>`
-
-    result.innerHTML += `A soma de todos os números é ${arraysum}`
-
-    result.innerHTML += `<p>A média de todos os valores é ${arraysum/array.length}</p>`
 }

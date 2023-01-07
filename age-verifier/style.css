@@ -17,7 +17,7 @@ body {
 
 .card {
     width: 400px;
-    height: 400px;
+    /* height: 400px; */
     padding: 10px;
     border-radius: 13px;
     background: #e0e0e0;
@@ -27,6 +27,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .card h1 {
@@ -47,7 +48,6 @@ body {
 }
 
 .year input {
-    width: 75%;
     height: 30px;
     width: 150px;
     border-radius: 4px;
@@ -71,12 +71,19 @@ body {
     gap: 10px;
 }
 
+.sex .radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
 .sex input:hover {
     cursor: pointer;
 }
 
 #ansewer {
-    height: 50px;
+    /* height: 50px; */
     font-weight: bold;
     font-size: 1.2em;
     text-align: center;

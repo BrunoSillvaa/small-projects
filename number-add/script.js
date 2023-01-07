@@ -25,5 +25,5 @@ function reset() {
     num2box.value = ''
 
     // Zera o campo de resultado
-    resultbox.innerText = '0'
+    resultbox.innerText = ''
 }
