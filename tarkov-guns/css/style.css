@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  background: rgba(20, 20, 20, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.guns-container {
+  background: rgb(19, 18, 18);
+  border-radius: 14px;
+  box-shadow: 10px 10px 18px -4px rgba(0, 0, 0, 0.75);
+  height: 75%;
+  width: 500px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+.guns-container .gun {
+  width: 100%;
+  background: rgb(14, 13, 13);
+  box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.guns-container .gun .gun-name {
+  color: rgb(209, 207, 207);
+  font-size: 1.5em;
+  text-align: center;
+  margin: 15px 0;
+}
+.guns-container .gun .gun-image {
+  width: 70%;
+}
+.guns-container .gun.active .gun-details {
+  display: block;
+  animation: showLeft 0.2s ease-in-out;
+}
+@keyframes showLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.guns-container .gun .gun-details {
+  background: rgb(43, 39, 39);
+  display: none;
+  position: static;
+  padding: 5px;
+}
+.guns-container .gun .gun-details .bullets {
+  color: rgba(236, 236, 236, 0.7960784314);
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.guns-container .gun .gun-details .bullets th, .guns-container .gun .gun-details .bullets tr, .guns-container .gun .gun-details .bullets td {
+  text-align: center;
+  padding: 0px 8px;
+}
+.guns-container .gun .gun-details .bullets td {
+  color: black;
+  border: 1px solid rgb(32, 31, 31);
+  font-weight: bold;
+}
+.guns-container .gun .gun-details .bullets .bullet-class th {
+  padding: 0 0 8px 0;
+  width: 70px;
+}
+.guns-container .gun .gun-details .bullets .bullet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  padding: 0 8px 0 0;
+  gap: 10px;
+}
+.guns-container .gun .gun-details .bullets .bullet .bullet-img {
+  width: 40px;
+}
+.guns-container .gun .gun-details .bullets .bullet .bullet-name {
+  font-size: 0.9em;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #202022;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(14, 13, 13);
+}/*# sourceMappingURL=style.css.map */

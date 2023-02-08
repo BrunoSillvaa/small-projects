@@ -64,4 +64,7 @@ body {
 
 .result {
     font-size: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
