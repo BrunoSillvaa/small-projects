@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <table>
+            <caption>Calculator</caption>
+            <tr>
+                <td colspan="4" class="result">
+                    <input type="text" class="display" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td><button data-btn="optr" value="(">(</button></td>
+                <td><button data-btn="optr" value=")">)</button></td>
+                <td><button data-btn="delete">«</button></td>
+                <td><button data-btn="clear">AC</button></td>
+            </tr>
+            <tr>
+                <td><button data-btn="num">7</button></td>
+                <td><button data-btn="num">8</button></td>
+                <td><button data-btn="num">9</button></td>
+                <td><button data-btn="optr" value="/">÷</button></td>
+            </tr>
+            <tr>
+                <td><button data-btn="num">4</button></td>
+                <td><button data-btn="num">5</button></td>
+                <td><button data-btn="num">6</button></td>
+                <td><button data-btn="optr" value="*">x</button></td>
+            </tr>
+            <tr>
+                <td><button data-btn="num">1</button></td>
+                <td><button data-btn="num">2</button></td>
+                <td><button data-btn="num">3</button></td>
+                <td><button data-btn="optr" value="-">-</button></td>
+            </tr>
+            <tr>
+                <td><button data-btn="num">0</button></td>
+                <td><button data-btn="num">.</button></td>
+                <td><button data-btn="equal">=</button></td>
+                <td><button data-btn="optr" value="+">+</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
