@@ -6,12 +6,17 @@ function createCalculator() {
 
         start() {
             this.clickButton()
+            this.keyboard()
         },
 
         clickButton() {
             this.buttons.forEach(button => {
                 button.addEventListener('click', () => {
                     let buttonTipe = button.dataset.btn
+
+                    if (this.count == 'Error') {
+                        this.clearDisplay()
+                    }
 
                     switch (buttonTipe) {
                         case 'num':
@@ -36,6 +41,25 @@ function createCalculator() {
             })
         },
 
+        keyboard() {
+            document.addEventListener('keyup', event => {
+                if (event.key == 'Enter') {
+                    this.performOperation()
+                    return
+                } else if (event.key == "Backspace"){
+                    this.deleteNum()
+                    return
+                } else if (event.key == 'Escape') {
+                    this.clearDisplay()
+                    return
+                } else {
+                    this.count += event.key
+                    this.display.value += event.key
+                    return
+                }
+            })
+        },
+
         clearDisplay() {
             this.count = ''
             this.display.value = ''
@@ -47,7 +71,17 @@ function createCalculator() {
         },
 
         performOperation() {
-            this.display.value = eval(this.count)
+            try {
+                if (this.count.length !== 0) {
+                    this.display.value = eval(this.count)
+                } else {
+                    this.display.value = 'Adicione Valores'
+                    this.count = 'Error'
+                }
+            } catch {
+                this.display.value= 'Conta Inválida'
+                this.count = 'Error'
+            }
         }
     }
 }
