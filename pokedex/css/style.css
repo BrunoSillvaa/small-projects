@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(#a2c5fe, #c2e9fc);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+input {
+  border: none;
+  background: rgba(241, 241, 241, 0.7803921569);
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 3rem;
+}
+input:focus {
+  outline: none;
+}
+
+.card {
+  height: 57.5rem;
+  border-radius: 2.5rem;
+  background-color: #fedc57;
+  position: relative;
+}
+.card .name {
+  position: absolute;
+  top: 2rem;
+  left: 11rem;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.card .name::first-letter {
+  text-transform: uppercase;
+}
+.card .img {
+  position: absolute;
+  top: 7.5rem;
+  left: 12rem;
+  height: 20rem;
+  width: 20rem;
+}
+.card .type {
+  position: absolute;
+  top: 2.2rem;
+  right: 2.5rem;
+  width: 3rem;
+}/*# sourceMappingURL=style.css.map */
