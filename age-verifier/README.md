@@ -4,12 +4,12 @@
 <div class="screenshots" style="display: flex; gap: 20px">
   <h4 align="center"> Screenshot 1
     <p align="center">
-      <img src="./design/age1.png"style="border-radius:10px"/>
+      <img src="./design/age1.png" width="80%" style="border-radius:10px"/>
     </p>
   </h4>
   <h4 align="center"> Screenshot 2
     <p align="center">
-      <img src="./design/age2.png"style="border-radius:10px"/>
+      <img src="./design/age2.png" width="80%"  style="border-radius:10px"/>
     </p>
   </h4>
 </div>
