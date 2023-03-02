@@ -9,11 +9,7 @@
   </h4>
   <h4 align="center"> Screenshot 2
     <p align="center">
-<<<<<<< HEAD
       <img src="./design/age2.png" width="80%" style="border-radius:10px"/>
-=======
-      <img src="./design/age2.png" width="80%"  style="border-radius:10px"/>
->>>>>>> 8bba164b8217dc6bc1221b02f33673e06772cdbd
     </p>
   </h4>
 </div>
