@@ -1,15 +1,15 @@
-<h1 align="center">Age Verifier</h1>
-<h2 align="center">Pergunta o ano de nascimento do usuario e o sexo, e retorna quantos anos essa pessoa tem atualmente.<h2/>
+<h1 align="center">Numbers Analyzer</h1>
+<h2 align="center">O usuário pode adicionar números do 0 ao 100 em uma lista e ao clique no botão "Verificar" é mostrado varias informações sobre esses números.<h2/>
 
 <div class="screenshots" style="display: flex; gap: 20px">
   <h4 align="center"> Screenshot 1
     <p align="center">
-      <img src="./design/age1.png" width="80%" style="border-radius:10px"/>
+      <img src="./design/verify1.png" width="80%" style="border-radius:10px"/>
     </p>
   </h4>
   <h4 align="center"> Screenshot 2
     <p align="center">
-      <img src="./design/age2.png" width="80%" style="border-radius:10px"/>
+      <img src="./design/verify2.png" width="80%" style="border-radius:10px"/>
     </p>
   </h4>
 </div>
