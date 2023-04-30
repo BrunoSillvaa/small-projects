@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title></title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title></title>
 </head>
+
 <body>
-    <input type="text" placeholder="Digite o nome do pokemon" value="pikachu">
-    <div class="card">
-        <img class="pokedex" src="./assets/card.png">
-        <h1 class="pokemon name"></h1>
-        <img class="pokemon img">
-        <img class="pokemon type" src="assets/types/electric.png">
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <input type="text" placeholder="Digite o nome do pokemon" value="charizard">
 
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
-    <script>
-        VanillaTilt.init(document.querySelector(".card"), {
-		max: 5,
-		speed: 400
-	});
-    </script>
+  <div class="card">
+    <img class="pokedex" src="./assets/card.png">
+    <h1 class="pokemon name"></h1>
+    <img class="pokemon img">
+    <img class="pokemon type">
+    <div class="pokemon abilities" />
+  </div>
 
-    <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+  <script>
+    VanillaTilt.init(document.querySelector(".card"), {
+      max: 5,
+      speed: 400
+    });
+  </script>
+
+  <script src="main.js"></script>
 </body>
+
 </html>

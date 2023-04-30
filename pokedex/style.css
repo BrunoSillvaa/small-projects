@@ -43,9 +43,9 @@ input:focus {
 }
 .card .name {
   position: absolute;
-  top: 2rem;
+  top: 1.9rem;
   left: 11rem;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 2.5rem;
 }
 .card .name::first-letter {
@@ -59,8 +59,49 @@ input:focus {
   width: 20rem;
 }
 .card .type {
-  position: absolute;
   top: 2.2rem;
   right: 2.5rem;
   width: 3rem;
+  position: absolute;
+}
+.card .abilities {
+  width: 85%;
+  position: absolute;
+  top: 33rem;
+  left: 4rem;
+}
+.card .abilities .ability {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  row-gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+.card .abilities .ability .ability-type {
+  height: 3rem;
+  width: 3rem;
+  grid-row: 1;
+  grid-column: 1;
+}
+.card .abilities .ability .ability-name {
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 2rem;
+  letter-spacing: -0.05rem;
+  font-weight: 600;
+  justify-self: center;
+  text-transform: capitalize;
+}
+.card .abilities .ability .ability-desc {
+  grid-row: 2;
+  grid-column: 1/3;
+  font-size: 1.5rem;
+  font-weight: 500;
+  max-height: 4rem;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+.card .abilities .ability .ability-desc::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
